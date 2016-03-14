@@ -58,7 +58,8 @@ LOCAL_SHARED_LIBRARIES += libxml2
 LOCAL_SHARED_LIBRARIES += libnfnetlink
 LOCAL_SHARED_LIBRARIES += libnetfilter_conntrack
 LOCAL_SHARED_LIBRARIES += libdhcpcd
-#include $(BUILD_EXECUTABLE)
+LOCAL_CLANG := true
+include $(BUILD_EXECUTABLE)
 
 ################################################################################
 
@@ -81,7 +82,7 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := $(LOCAL_MODULE)
 LOCAL_MODULE_OWNER := ipacm
-#include $(BUILD_PREBUILT)
+include $(BUILD_PREBUILT)
 
 endif # $(TARGET_ARCH)
 endif

@@ -27,6 +27,5 @@
 #  IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-add_lunch_combo msm8992-userdebug
-add_lunch_combo msm8994-userdebug
-export PDK_FUSION_PLATFORM_ZIP=$(find vendor/pdk -name platform.zip)
+add_lunch_combo carbon_oneplus2-userdebug
+add_lunch_combo carbon_oneplus2-eng

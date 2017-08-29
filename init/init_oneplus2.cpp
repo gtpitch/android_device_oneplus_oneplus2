@@ -28,6 +28,7 @@
  */
 
 #include <stdlib.h>
+#include <android-base/properties.h>
 
 #include "vendor_init.h"
 #include "property_service.h"
@@ -36,13 +37,13 @@
 
 void init_variant_properties() {
 
-    std::string device = property_get("ro.carbon.device");
+    std::string device = android::base::GetProperty("ro.carbon.device", "");
     std::string rf_version;
 
     if (device != "oneplus2")
         return;
 
-    rf_version = property_get("ro.boot.rf_v1");
+    rf_version = android::base::GetProperty("ro.boot.rf_v1", "");
 
     if (rf_version == "14") {
         /* Chinese */

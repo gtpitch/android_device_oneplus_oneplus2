@@ -108,14 +108,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     camera.msm8994 \
     libshim_camera \
-    sensors.hal.tof \
-    mm-qcamera-app \
-    libmm-qcamera \
+    libshim_ims-camera \
     sensors.hal.tof \
     Snap
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.d/10opcamsanitize.sh:system/etc/init.d/10opcamsanitize.sh
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \

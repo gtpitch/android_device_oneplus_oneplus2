@@ -111,6 +111,7 @@ PRODUCT_PACKAGES += \
     libshim_camera \
     libshim_ims-camera \
     sensors.hal.tof \
+    libshim_atomic \
     Snap
 
 # Connectivity Engine support (CNE)

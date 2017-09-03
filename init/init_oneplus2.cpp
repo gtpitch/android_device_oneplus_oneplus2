@@ -41,7 +41,7 @@ using android::base::GetProperty;
 
 void init_variant_properties() {
 
-    std::string device = GetProperty("ro.carbon.device");
+    std::string device = GetProperty("ro.carbon.device", "");
     std::string platform;
     std::string rf_version;
 
